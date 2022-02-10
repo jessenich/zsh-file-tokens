@@ -1,0 +1,479 @@
+# A primer on a few git attributes
+# whitespace=space-before-tab = do not allow spaces followed by tabs
+# whitespace=tab-in-indent    = do not allow indentation by tabs
+# whitespace=trailing-space   = do not allow trailing spaces
+
+*                       text=auto                eol=lf                   whitespace=space-before-tab,tab-in-indent,trailing-space,tab
+*                       whitespace=space-before-tab,tab-in-indent,trailing-space,tab
+
+### Archives
+*.7z                    binary                -text
+*.br                    binary                -text
+*.bz2                   binary                -text
+*.gz                    binary                -text
+*.tar                   binary                -text
+*.zip                   binary                -text
+*.xz                    binary                -text
+*.Z                     binary                -text
+*.lzma                  binary                -text
+*.lz                    binary                -text
+*.lzo                   binary                -text
+*.lz4                   binary                -text
+*.lz4c                  binary                -text
+*.lz4f                  binary                -text
+*.lz4h                  binary                -text
+*.lz4k                  binary                -text
+*.lz4s                  binary                -text
+*.lz4x                  binary                -text
+*.lz4y                  binary                -text
+*.lz4z                  binary                -text
+*.rar                   binary                -text
+
+### Adobe Project File Types
+*.fla                   binary
+*.swf                   binary
+*.pdf                   binary
+*.psd                   binary
+*.ai                    binary
+*.eps                   binary
+*.indd                  binary
+*.indt                  binary
+*.indb                  binary
+*.indl                  binary
+*.indp                  binary
+*.idns                  binary
+*.idml                  binary
+*.idms                  binary
+*.idmx                  binary
+*.idoc                  binary
+*.idot                  binary
+*.idotm                 binary
+*.idotx                 binary
+*.indd                  binary
+*.indt                  binary
+*.indb                  binary
+
+### Movie and audio files
+*.avi                   binary
+*.aac                   binary
+*.adt                   binary
+*.adts                  binary
+*.mov                   binary
+*.mp4                   binary
+*.mp3                   binary
+*.flv                   binary
+*.ogg                   binary
+*.wav                   binary
+*.m4a                   binary
+*.m4v                   binary
+*.m4p                   binary
+*.m4b                   binary
+*.m4r                   binary
+*.mpg                   binary
+*.mpeg                  binary
+*.flac                  binary
+*.aiff                  binary
+*.aif                   binary
+*.aifc                  binary
+*.cda                   binary
+*.mid                   binary
+*.midi                  binary
+*.vob                   binary
+*.wma                   binary
+*.wmd                   binary
+*.wmf                   binary
+*.wmv                   binary
+*.wmz                   binary
+*.wms                   binary
+*.wmx                   binary
+*.wpd                   binary
+*.wp5                   binary
+*.xla                   binary
+*.xlam                  binary
+*.xll                   binary
+*.xlm                   binary
+*.xls                   binary
+
+### Image files
+*.png                   binary
+*.jpg                   binary
+*.jpeg                  binary
+*.gif                   binary
+*.webp                  binary
+*.ico                   binary
+*.tif                   binary
+*.tiff                  binary
+*.raw                   binary
+*.bmp                   binary
+*.tga                   binary
+
+### Web fonts
+*.ttf                   binary
+*.eot                   binary
+*.woff                  binary
+*.woff2                 binary
+*.otf                   binary
+
+### Apple office documents are actually folders, so treat them as binary.
+*.numbers               binary
+*.pages                 binary
+*.keynote               binary
+
+### Compiled MacOS Applications and Libraries. .app(s) are folders, so treat them as binary.
+*.app                   binary
+*.dylib                 binary
+
+### Compiled Windows Applications and Libraries
+*.exe                   binary
+*.dll                   binary
+*.sys                   binary
+*.msi                   binary
+*.com                   binary
+
+### Compiled Linux Applications and Libraries
+*.so                    binary
+*.so.1                  binary
+
+### Image/Binary files
+*.cab                   binary
+*.img                   binary
+*.dmg                   binary
+*.iso                   binary
+*.vcd                   binary
+*.bin                   binary
+*.cue                   binary
+*.vhd                   binary
+*.vdi                   binary
+*.vmdk                  binary
+*.vhdx                  binary
+
+### Database Files
+*.db                    binary
+*.shm                   binary
+*.wal                   binary
+*.sqlite                binary
+*.sqlite3               binary
+*.fdb                   binary
+*.gdb                   binary
+*.mdf                   binary
+*.mds                   binary
+*.mde                   binary
+*.ldf                   binary
+*.sdf                   binary
+*.bak                   binary
+*.wdb                   binary
+*.myd                   binary
+*.idx                   binary
+*.cdb                   binary
+*.sdb                   binary
+*.db3                   binary
+*.str                   binary
+*.sqlite-journal        binary
+*.db-journal            binary
+*.sqlite-shm            binary
+*.db-shm                binary
+*.sqlite-wal            binary
+*.db-wal                binary
+*.s3db                  binary
+*.fmp12                 binary
+*.crp                   binary
+*.sl2                   binary
+*.edb                   binary
+*.tdb                   binary
+*.pdm                   binary
+*.jet                   binary
+*.ecsv                  binary
+*.tdb                   binary
+
+
+
+### Java Binaries
+*.jar                   binary
+
+
+### Open Office / MS Office Formats
+*.docx                  binary
+*.xlsx                  binary
+*.pptx                  binary
+*.potx                  binary
+*.vsdx                  binary
+*.vstx                  binary
+*.doc                   binary
+*.docm                  binary
+*.xls                   binary
+*.xlsb                  binary
+*.ppt                   binary
+*.pot                   binary
+*.potm                  binary
+*.ppam                  binary
+*.pps                   binary
+*.ppsx                  binary
+*.ppsm                  binary
+*.pptm                  binary
+*.vsd                   binary
+*.vsdm                  binary
+*.vss                   binary
+*.vssm                  binary
+*.vsx                   binary
+*.vst                   binary
+*.vstm                  binary
+*.vtx                   binary
+*.vdx                   binary
+*.mpp                   binary
+*.mpt                   binary
+*.one                   binary
+*.onepkg                binary
+*.onetoc                binary
+*.snp                   binary
+*.xlsb                  binary
+*.xlsm                  binary
+*.mdb                   binary
+*.accdb                 binary
+*.accde                 binary
+*.accdr                 binary
+*.accdt                 binary
+*.dif                   binary
+*.pub                   binary
+*.sldm                  binary
+*.sldx                  binary
+*.wbk                   binary
+*.xps                   binary
+*.xlt                   binary
+*.xltm                  binary
+*.xltx                  binary
+*.thmx                  binary
+
+
+# Email files (Vendor Independent)
+*.eml                   binary
+*.pst                   binary
+*.ost                   binary
+
+# Other/Misc Binary Type Files
+*.mui                   binary
+
+#############################
+# Whitespace (exclusions)
+#############################
+.gitmodules             -whitespace
+
+# Plain Text Files
+*.txt                   text                     eol=lf
+*.rtf                   text                     eol=lf
+*.text                  text                     eol=lf
+*.log                   text                     eol=lf
+*.csv                   text                     eol=lf
+*.tsv                   text                     eol=lf
+*.tab                   text                     eol=lf
+
+# Markdown Files
+*.md                    text                     eol=lf
+*.markdown              text                     eol=lf
+*.mdown                 text                     eol=lf
+*.markdown_py           text                     eol=lf
+*.mdwn                  text                     eol=lf
+*.mkd                   text                     eol=lf
+*.mkdn                  text                     eol=lf
+*.mkdown                text                     eol=lf
+
+
+# .Net [Core] Files
+*.cs                    text                     eol=lf
+*.csx                   text                     eol=lf
+*.vb                    text                     eol=lf
+*.vbx                   text                     eol=lf
+*.fs                    text                     eol=lf
+*.fsx                   text                     eol=lf
+*.fsi                   text                     eol=lf
+*.fsscript              text                     eol=lf
+
+# ASP.NET [Core] Files
+*.asp                   text                     eol=lf
+*.aspx                  text                     eol=lf
+*.master                text                     eol=lf
+*.ascx                  text                     eol=lf
+*.asmx                  text                     eol=lf
+*.asax                  text                     eol=lf
+*.ashx                  text                     eol=lf
+*.svc                   text                     eol=lf
+*.svc.cs                text                     eol=lf
+*.svc.vb                text                     eol=lf
+*.svc.fs                text                     eol=lf
+
+# MacOS Developer Files
+*.swift                 text                     eol=lf
+*.swiftdeps             text                     eol=lf
+*.plist                 text                     eol=lf
+*.strings               text                     eol=lf
+*.storyboard            text                     eol=lf
+*.xcscheme              text                     eol=lf
+*.xcodeproj             text                     eol=lf
+*.objc                  text                     eol=lf
+*.h                     text                     eol=lf
+*.m                     text                     eol=lf
+*.cpp                   text                     eol=lf
+*.c                     text                     eol=lf
+
+# Windows Shell Scripts
+*.bat                   text                     eol=lf
+*.batch                 text                     eol=lf
+*.cmd                   text                     eol=lf
+*.ps1                   text                     eol=lf
+*.psm1                  text                     eol=lf
+*.psd1                  text                     eol=lf
+*.ps1xml                text                     eol=lf
+*.ps1md                 text                     eol=lf
+*.ps1n                  text                     eol=lf
+*.ps1l                  text                     eol=lf
+*.ps1ds                 text                     eol=lf
+*.ps1dd                 text                     eol=lf
+*.ps1de                 text                     eol=lf
+*.ps1dr                 text                     eol=lf
+*.ps1ddr                text                     eol=lf
+*.vbs                   text                     eol=lf
+*.vbe                   text                     eol=lf
+*.vbw                   text                     eol=lf
+*.vbscript              text                     eol=lf
+*.jscript               text                     eol=lf
+*.jse                   text                     eol=lf
+
+# Linux Shell scripts
+*.sh                    text                     eol=lf
+*.bash                  text                     eol=lf
+*.bashrc                text                     eol=lf
+*.fsh                   text                     eol=lf
+*.fshrc                 text                     eol=lf
+*.fprofile              text                     eol=lf
+*.ksh                   text                     eol=lf
+*.kshrc                 text                     eol=lf
+*.kprofile              text                     eol=lf
+*.csh                   text                     eol=lf
+*.cshrc                 text                     eol=lf
+*.cprofile              text                     eol=lf
+*.tcsh                  text                     eol=lf
+*.tcshrc                text                     eol=lf
+*.tcprofile             text                     eol=lf
+*.tsh                   text                     eol=lf
+*.tshrc                 text                     eol=lf
+*.tshprofile            text                     eol=lf
+*.zsh                   text                     eol=lf
+*.zshrc                 text                     eol=lf
+*.zprofile              text                     eol=lf
+*.rc                    text                     eol=lf
+*.profile               text                     eol=lf
+*.nanorc                text                     eol=lf
+*.shellcheckrc          text                     eol=lf
+
+# Structured Query Languages
+*.sql                   text                     eol=lf
+
+# Text-Form-Serialization Syntaxes
+*.graphql               text                     eol=lf
+*.gql                   text                     eol=lf
+*.json                  text                     eol=lf
+
+# JavaScript Files
+*.js                    text                     eol=lf
+*.jsx                   text                     eol=lf
+*.ejs                   text                     eol=lf
+*.mjs                   text                     eol=lf
+*.cjs                   text                     eol=lf
+*.ujs                   text                     eol=lf
+
+# TypeScript files
+*.ts                    text                     eol=lf
+*.tsx                   text                     eol=lf
+
+# XML Formatted Files
+*.htm                   text                     eol=lf
+*.html                  text                     eol=lf
+*.ht                    text                     eol=lf
+*.xml                   text                     eol=lf
+*.svg                   text                     eol=lf
+*.xsd                   text                     eol=lf
+*.xsl                   text                     eol=lf
+*.svg                   text                     eol=lf
+
+# Docker related files
+*Dockerfile*            text                     eol=lf
+*.dockerignore          text                     eol=lf
+*.docker-compose*       text                     eol=lf
+
+# Makefile files
+*.mk                    text                     eol=lf
+*.make                  text                     eol=lf
+*Makefile*              text                     eol=lf
+
+# Visual Studio / JetBrains Rider / .NET (Core) files
+*.csproj                text                     eol=lf
+*.csproj.user           text                     eol=lf
+*.vbproj                text                     eol=lf
+*.vbproj.user           text                     eol=lf
+*.fsproj                text                     eol=lf
+*.fsproj.user           text                     eol=lf
+*.nproj                 text                     eol=lf
+*.nproj.user            text                     eol=lf
+*.npmproj               text                     eol=lf
+*.npmproj.user          text                     eol=lf
+*.yarnproj              text                     eol=lf
+*.yarnproj.user         text                     eol=lf
+*.jproj                 text                     eol=lf
+*.jproj.user            text                     eol=lf
+*.tsproj                text                     eol=lf
+*.tsproj.user           text                     eol=lf
+
+# PostScript Files
+*.eps                   text                     eol=lf
+
+# Nuget Config Files & Packages
+*.nuget                 text                     eol=lf
+*.nuget.config          text                     eol=lf
+*.nuspec                text                     eol=lf
+*.nuspec.user           text                     eol=lf
+*.nuspec.g.user         text                     eol=lf
+*.nuspec.d.user         text                     eol=lf
+
+# Documentation
+*.ipynb                 text                     eol=lf
+*.markdown              text                     eol=lf
+*.md                    text                     eol=lf
+*.mdwn                  text                     eol=lf
+*.mdown                 text                     eol=lf
+*.mkd                   text                     eol=lf
+*.mkdn                  text                     eol=lf
+*.mdtxt                 text                     eol=lf
+*.mdtext                text                     eol=lf
+*.txt                   text                     eol=lf
+AUTHORS*                text                     eol=lf
+CHANGELOG*              text                     eol=lf
+CHANGES*                text                     eol=lf
+CONTRIBUTING*           text                     eol=lf
+COPYING*                text                     eol=lf
+copyright*              text                     eol=lf
+*COPYRIGHT*             text                     eol=lf
+INSTALL*                text                     eol=lf
+license*                text                     eol=lf
+LICENSE*                text                     eol=lf
+NEWS*                   text                     eol=lf
+readme*                 text                     eol=lf
+README*                 text                     eol=lf
+TODO*                   text                     eol=lf
+
+# Configs
+*.cnf                   text                     eol=lf
+*.conf                  text                     eol=lf
+*.config                text                     eol=lf
+*.ini                   text                     eol=lf
+.editorconfig           text                     eol=lf
+.env                    text                     eol=lf
+.gitattributes          text                     eol=lf
+.gitconfig              text                     eol=lf
+.htaccess               text                     eol=lf
+*.lock                  text                     eol=lf                   -diffin
+Makefile                text
+makefile                text
+
+# Ignore when exporting
+.gitattributes          export-ignore            eol=lf                   -whitespace
+.gitignore              export-ignore            eol=lf                   -whitespace
+.gitmodules             export-ignore            eol=lf                   -whitespace
