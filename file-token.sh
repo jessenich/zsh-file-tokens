@@ -12,9 +12,9 @@
     ::print_help() {
         cat <<'EOF'
 Usage: token <name> [ <value> ]"
-   token set github_token ghp_abcdef0123456789abcdef01234567
+    token set github_token ghp_abcdef0123456789abcdef01234567
 
-   Usage Examples:
+    Usage Examples:
       $ token get GITHUB_TOKEN"
       > ghp_abcdef0123456789abcdef01234567"
 
